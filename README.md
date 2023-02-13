@@ -4,6 +4,9 @@
 
 To use SimpleSerial, a secure connection is needed! (localhost, https or use Chrome flag: chrome://flags/#unsafely-treat-insecure-origin-as-secure)
 
+
+## How to use:
+
 ### serialConnect(baud)
 
 to connect to a serial port, call serialConnect(baud) and choose the port from the pop-up. 
