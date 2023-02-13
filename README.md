@@ -33,5 +33,7 @@ To use SimpleSerial, a secure connection is needed!
 			1: Replace inputData with the string you want to send to the connected serial port.
 			2: Replace inputData with a string containing the id for the textarea or input field from which you want to get the string to send to the connected serial port.
 	
-	Example: 	Direct string: 	serialSend(1, 'Data i want to send.') sends: Data i want to send.
-					id of input field: 	serialSend(2, 'textfield') sends the value of textfield
+	Example: 	
+			Direct string: serialSend(1, 'Data i want to send.') sends: "Data i want to send."
+			Id of input field: 	serialSend(2, 'textfield') sends the value of textfield.
+			
