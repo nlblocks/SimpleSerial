@@ -44,7 +44,6 @@ async function serialReceiveUntil(outputElementID, transmissionEnd) {
         if (alldata.includes(transmissionEnd)) {
             output = alldata;
 			document.getElementById(outputElementID).value = output;
-            //reader.releaseLock();
 			console.log(output);
 			reader.releaseLock();
 			console.log("Stopped Receiving.");
@@ -62,7 +61,6 @@ async function serialReceive(outputElementID) {
 	alldata = alldata + decoder.decode(value);
 	document.getElementById(outputElementID).value = alldata;
 	output = alldata;
-	//reader.releaseLock();
 	console.log(output);
 	reader.releaseLock();
 	console.log("Stopped Receiving.");
@@ -79,7 +77,5 @@ async function serialSend(inputMethod, inputData) {
     const writer = serial.writable.getWriter();
     console.log("Send via serial: " + value);
     await writer.write(encoder.encode(value));
-
-    // Allow the serial port to be closed later.
     writer.releaseLock();
 }
