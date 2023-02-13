@@ -7,7 +7,7 @@ To use SimpleSerial, a secure connection is needed! (localhost, https or use Chr
 
 ## How to install:
 
-Download simpleserial.js and add it to your <head>:
+Download simpleserial.js and add it to your html:
 
     <script src="js/simpleserial.js"></script>
 
