@@ -7,6 +7,16 @@ To use SimpleSerial, a secure connection is needed! (localhost, https or use Chr
 
 ## How to use:
 
+download simpleserial.js and add it to your <head>:
+
+    <script src="js/simpleserial.js"></script>
+
+or, alternatively, get it online: 
+
+      <script src="https://raw.githubusercontent.com/nlblocks/SimpleSerial/main/simpleserial.js"></script>
+
+## Functions available:
+
 ### serialConnect(baud);
 to connect to a serial port, call serialConnect(baud) and choose the port from the pop-up. 
 - Replace baud for the baudrate you want to use.
