@@ -7,8 +7,7 @@ To use SimpleSerial, a secure connection is needed! (localhost, https or use Chr
 
 ## How to use:
 
-### serialConnect(baud)
-
+### serialConnect(baud);
 to connect to a serial port, call serialConnect(baud) and choose the port from the pop-up. 
 - Replace baud for the baudrate you want to use.
 
@@ -33,7 +32,7 @@ Example:
 
 	serialReceiveUntil('outputfield', 'End of Data');
 	
-### serialReceive(outputElementID)
+### serialReceive(outputElementID);
 To receive data once, call serialreceive(outputElementID).
 - Replace outputElementID with the element id you want the data to appear in, like a textarea or input field.
 	
@@ -41,12 +40,12 @@ Example:
 
 	serialReceive('outputfield');
 
-### serialSend(inputMethod, inputData)
+### serialSend(inputMethod, inputData);
 To send data, call serialSend(inputMethod, inputData).
 
 - Replace inputMethod with the way you want to get the data:
-    1 = Replace inputData with the string you want to send to the connected serial port.
-    2 = Replace inputData with a string containing the id for the textarea or input field from which you want to get the string to send to the connected serial port.
+    - 1 = Replace inputData with the string you want to send to the connected serial port.
+    - 2 = Replace inputData with a string containing the id for the textarea or input field from which you want to get the string to send to the connected serial port.
 
 Example:
 
