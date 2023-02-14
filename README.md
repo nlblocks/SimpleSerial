@@ -13,7 +13,7 @@ Download simpleserial.js and add it to your html:
 
 Or, alternatively, get it online: 
 
-      <script src="https://raw.githubusercontent.com/nlblocks/SimpleSerial/main/simpleserial.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/nlblocks/SimpleSerial@main/simpleserial.js"></script>
 
 ## How to use/available functions:
 
