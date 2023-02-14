@@ -57,10 +57,8 @@ async function serialReceive(outputElementID) {
     const reader = serial.readable.getReader();
     let {value, done} = await reader.read();  
 	console.log("Received via serial: " + decoder.decode(value));
-	alldata = alldata + decoder.decode(value);
-	document.getElementById(outputElementID).value = alldata;
-	output = alldata;
-	console.log(output);
+	output = decoder.decode(value);
+	document.getElementById(outputElementID).value = output;
 	reader.releaseLock();
 	console.log("Stopped Receiving.");
 }
