@@ -32,13 +32,12 @@ async function serialDisconnect() {
 }
 
 async function serialReceiveUntil(outputElementID, transmissionEnd) {
-    console.log("Started Receiving untill " + TransmissionEnd + "is found in the received data.");
+    console.log("Started Receiving until " + transmissionEnd + "is found in the received data.");
 	var parse = 0;
     var alldata = "";
     const reader = serial.readable.getReader();
     while (true) {
         let {value, done} = await reader.read();
-        
         console.log("Received via serial: " + decoder.decode(value));
         alldata = alldata + decoder.decode(value);
         if (alldata.includes(transmissionEnd)) {
